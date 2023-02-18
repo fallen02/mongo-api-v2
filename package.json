@@ -1,0 +1,18 @@
+{
+  "name": "mongo-api-v2",
+  "version": "1.0.0",
+  "description": "Mongo Api",
+  "main": "index.js",
+  "author": "Fallen",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20"
+  }
+}
