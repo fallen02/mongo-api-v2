@@ -6,9 +6,10 @@ dotenv.config()
 const app = express()
 
 mongoose.set('strictQuery', true)
-mongoose.connect(
-    process.env.MONGO_URI,
-    () => console.log('Successfully connected to db')
+mongoose.connect(process.env.MONGO_URI)
+    .then(
+        () => console.log('Successfully connected to db')
+        err => console.log('Authentication Error')
 )
 
 const allRoutes = require('./workers/routes')
